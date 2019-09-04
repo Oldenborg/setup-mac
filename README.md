@@ -8,3 +8,9 @@
 ```
 sh ./setup.sh
 ```
+
+# Setting up the materialshell theme.
+
+1. Terminal > Preferences > Gear Icon > Import
+2. Select one of the theme in this repo called "materialshell-oceanic.terminal
+3. Set as default the profile with the materialshell theme selecting the profile and clicking on the Default button.
