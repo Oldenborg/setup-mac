@@ -1,0 +1,26 @@
+# Remember to point to your actual php version
+alias php="/usr/local/Cellar/php/7.2.10/bin/php"
+alias gs="git status"
+alias co="git checkout"
+alias undo="git reset HEAD~"
+alias chrome="/usr/bin/open -a '/Applications/Google Chrome.app' 'http://localhost:3000'"
+alias run="npm run dev; chrome"
+alias phpunit="./vendor/bin/phpunit"
+alias test="phpunit"
+alias todo="grep TODO . -r --exclude-dir=node_modules"
+alias setup="vi ~/.zshrc"
+
+export PATH="/usr/local/bin:/Users/henrik/development/flutter/bin:$HOME/.composer/vendor/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+makePR() {
+  if [ -z $1]; then
+    echo "ERROR: makePR must recieve a valid-branch-name as the first paramater";
+  else
+    git checkout -b $1
+    git commit --allow-empty
+    git push --set-upstream origin $1
+  fi
+}

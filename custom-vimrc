@@ -1,0 +1,70 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+ 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'ohtree/html5.vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'posva/vim-vue'
+Plugin 'digitaltoad/vim-pug'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" Put your non-Plugin stuff after this line
+
+
+
+"-----------  Visuals------------"
+syntax enable
+set t_CO=256
+
+set guifont=FiraCode:h17
+set guioptions-=l
+set guioptions-=L
+set guioptions-=r
+set guioptions-=R
+
+"-----------  Mappings ------------"
+set backspace=indent,eol,start
+set number
+set linespace=15
+
+
+set hlsearch
+set noswapfile
+set clipboard=unnamed
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set hlsearch
+set cindent
+set autoindent
+set smartindent
+
+"-----------  Mappings ------------"
+let mapleader = ','
+nmap <Leader>ev :tabedit $MYVIMRC<cr>
+nmap <Leader>eb :tabedit ~/.bash_profile<cr>
+nmap <Leader><space> :nohlsearch<cr>
+nmap <Leader><Leader> :NERDTreeToggl<cr>
+
+nmap <D-e> :CtrlPMRUFiles<cr>
+
+" ------------------ CTRLP SETTINGS -------------------------- "
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules)$'"
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+
+"------- Auto-Commands ------------"
+augroup autosourcing
+	autocmd!
+	autocmd BufWritePost .vimrc source %
+augroup END
