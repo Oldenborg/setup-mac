@@ -33,10 +33,11 @@ brew cask install java
 # Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# Install VIM plugins
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Fetch ZSH material theme and move it to oh-my-zsh https://materialshell.carloscuesta.me/
-
+# Move the oh-my-zsh material theme into the custom folder
+cp materialshell.zsh-theme ~/.oh-my-zsh/custom
 
 # move custom-vimrc to .vimrc
 cp ./custom-vimrc ~/.vimrc
