@@ -14,6 +14,7 @@ brew install php
 brew install composer
 brew install nvm
 brew install multitail
+brew install tig
 
 brew cask install google-chrome
 brew cask install zeplin
