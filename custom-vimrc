@@ -13,6 +13,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'posva/vim-vue'
 Plugin 'digitaltoad/vim-pug'
+Plugin 'tasn/vim-tsx'
 
 
 " All of your Plugins must be added before the following line
