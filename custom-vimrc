@@ -43,8 +43,8 @@ set linespace=15
 set hlsearch
 set noswapfile
 set clipboard=unnamed
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set hlsearch
 set cindent
