@@ -14,3 +14,11 @@ sh ./setup.sh
 1. Terminal > Preferences > Gear Icon > Import
 2. Select one of the theme in this repo called "materialshell-oceanic.terminal
 3. Set as default the profile with the materialshell theme selecting the profile and clicking on the Default button.
+
+# Setting up keyboard shortcuts
+
+Go to `system settings` -> `Keyboard` -> `Shortcuts` -> `Programshortcuts`
+
+Enter in your perfered shortcuts
+
+![Program shortcuts](shortcuts.png?raw=true "Shortcuts")
