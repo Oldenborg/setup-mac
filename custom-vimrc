@@ -34,6 +34,10 @@ set guioptions-=L
 set guioptions-=r
 set guioptions-=R
 
+"set the filename in the status line type :help statusline to se a list of
+"options try f (path) F (full path) or t (filename)"
+set statusline=%f
+
 "-----------  Mappings ------------"
 set backspace=indent,eol,start
 set number
