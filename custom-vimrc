@@ -15,6 +15,8 @@ Plugin 'posva/vim-vue'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ervandew/supertab'
 
 
 " All of your Plugins must be added before the following line
@@ -68,6 +70,9 @@ nmap <D-e> :CtrlPMRUFiles<cr>
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 "let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules)$'"
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+
+" ----------AUTO COMPLETE SETTINGS ---------------------------"
+inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
 
 "------- Auto-Commands ------------"
 augroup autosourcing
