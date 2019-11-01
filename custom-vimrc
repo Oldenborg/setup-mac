@@ -17,6 +17,9 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
+Plugin 'prettier/vim-prettier'
+Plugin 'dense-analysis/ale'
+Plugin 'vim-airline/vim-airline'
 
 
 " All of your Plugins must be added before the following line
@@ -44,7 +47,6 @@ set statusline=%f
 set backspace=indent,eol,start
 set number
 set linespace=15
-
 
 set hlsearch
 set noswapfile
@@ -79,3 +81,12 @@ augroup autosourcing
 	autocmd!
 	autocmd BufWritePost .vimrc source %
 augroup END
+
+"----------------- ALE CONFIGURATION -----------------------"
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+let g:ale_fixers = ['prettier', 'eslint']
+let g:ale_fix_on_save = 1
+let g:airline#extensions#ale#enabled = 1
