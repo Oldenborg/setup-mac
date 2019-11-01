@@ -36,6 +36,9 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# Move the git configuration file
+cp ./.gitconfig ~/.gitconfig
+
 # Move the oh-my-zsh material theme into the custom folder
 cp materialshell.zsh-theme ~/.oh-my-zsh/custom
 

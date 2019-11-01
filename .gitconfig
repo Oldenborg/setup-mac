@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = Henrik Oldenborg
+email = henrik@oldenborg.nu
+
+[alias]
+pushup = "!git push --set-upstream origin $(git symbolic-ref --short HEAD)"
