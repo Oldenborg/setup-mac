@@ -22,3 +22,5 @@ Go to `system settings` -> `Keyboard` -> `Shortcuts` -> `Programshortcuts`
 Enter in your perfered shortcuts
 
 ![Program shortcuts](shortcuts.png?raw=true "Shortcuts")
+
+#test
