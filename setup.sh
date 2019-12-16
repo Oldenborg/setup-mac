@@ -28,6 +28,7 @@ brew cask install adobe-creative-cloud
 brew cask install wacom-intuos-tablet
 brew cask install chromium
 brew cask install java
+brew cask install runjs
 
 # Get VIM and ZSH settings from GIST
 # Install Vundle
