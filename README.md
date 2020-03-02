@@ -25,3 +25,7 @@ Enter in your perfered shortcuts
 
 ## Update Git global configuration
 Go to the `.gitconfig` in your home directory and update the name and email in the config file to whatever fits your needs
+
+
+## Follow these installation instructions
+[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)

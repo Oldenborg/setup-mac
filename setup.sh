@@ -15,6 +15,7 @@ brew install composer
 brew install nvm
 brew install multitail
 brew install tig
+brew install diff-so-fancy
 
 brew cask install google-chrome
 brew cask install zeplin
