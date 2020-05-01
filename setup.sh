@@ -59,3 +59,6 @@ npm install -g @vue/cli-service-global
 # Install global composer packages
 composer global require laravel/installer
 composer global require laravel/valet
+
+# Install global ruby packages
+sudo gem install cocoapods
