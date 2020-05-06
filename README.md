@@ -19,7 +19,9 @@ sh ./setup.sh
 
 Go to `system settings` -> `Keyboard` -> `Shortcuts` -> `Programshortcuts`
 
-Enter in your perfered shortcuts
+Enter in your perfered shortcuts:
+
+Notes: Gennemstreget/CMD+T
 
 ![Program shortcuts](shortcuts.png?raw=true "Shortcuts")
 
