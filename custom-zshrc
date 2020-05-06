@@ -40,3 +40,13 @@ makeFeature() {
     git push --set-upstream origin $BRANCH
   fi
 }
+
+# Neet little script to run update tools on mondays
+# Everybody hates mondays so lets make it a little less awefull
+if [[ $(date +%u) == 1 ]]; then
+    echo 'Its monday so lets update our tooling'
+    composer global update
+    brew update
+    brew upgrade
+fi
+
