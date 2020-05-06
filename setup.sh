@@ -32,6 +32,7 @@ brew cask install chromium
 brew cask install java
 brew cask install runjs
 brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+brew cask install android-studio
 
 
 # Get VIM and ZSH settings from GIST
