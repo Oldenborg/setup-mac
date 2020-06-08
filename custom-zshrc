@@ -48,6 +48,7 @@ if [[ $(date +%u) == 1 ]]; then
     composer global update
     brew update
     brew upgrade
+    npm update -g
 fi
 
 # Android SDK configuration
