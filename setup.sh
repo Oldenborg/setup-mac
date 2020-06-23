@@ -33,6 +33,7 @@ brew cask install java
 brew cask install runjs
 brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 brew cask install android-studio
+brew cask install visual-studio-code
 
 
 # Get VIM and ZSH settings from GIST
@@ -54,6 +55,9 @@ cp ./custom-vimrc ~/.vimrc
 # extend custom-zshrc to .zshrc
 cat ./custom-zshrc >> ~/.zshrc
 
+# move custom-vscode to vscode default settings file position
+cp ./custom-vscode ~/Library/Application\ Support/Code/User/settings.json
+
 # Install global node packages
 npm i -g eslint eslint-plugin-vue vue-cli
 npm install -g @vue/cli
@@ -65,3 +69,22 @@ composer global require laravel/valet
 
 # Install global ruby packages
 sudo gem install cocoapods
+
+# Install visual studio code extension
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension adpyke.vscode-sql-formatter
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension amiralizadeh9480.laravel-extra-intellisense
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension bmewburn.vscode-intelephense-client
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension dbaeumer.vscode-eslint
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension eamodio.gitlens
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension eg2.tslint
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension esbenp.prettier-vscode
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension jcbuisson.vue
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension johnpapa.vscode-peacock
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension MehediDracula.php-namespace-resolver
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension mohamedbenhida.laravel-intellisense
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-vscode.vscode-typescript-tslint-plugin
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-vsliveshare.vsliveshare
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-vsliveshare.vsliveshare-audio
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-vsliveshare.vsliveshare-pack
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension octref.vetur
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension vscodevim.vim
