@@ -26,13 +26,13 @@ makePR() {
 }
 
 makeFeature() {
-  if [ -z $1]; then
+  if [ -z $1 ]; then
     echo "ERROR: makeFeature must recieve a JIRA ticket ID as the first paramater";
-  elif [ -z $2]; then
+  elif [ -z $2 ]; then
     echo "ERROR: makeFeature must recieve a branch name as the second paramater";
   else
     JIRAISSUE=$1
-    BRANCHTITLE=`echo "print '${2//\ /_}'.lower()" | python`
+    BRANCHTITLE=`echo "print('${2//\ /_}'.lower())" | python`
     BRANCH="feature/${JIRAISSUE}_${BRANCHTITLE}"
     git checkout develop
     git checkout -b $BRANCH
