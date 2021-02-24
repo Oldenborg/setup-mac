@@ -31,3 +31,6 @@ Go to the `.gitconfig` in your home directory and update the name and email in t
 
 ## Follow these installation instructions
 [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+
+## Get the Fira code font
+Download it [here](https://github.com/tonsky/FiraCode)
