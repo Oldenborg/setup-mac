@@ -48,6 +48,8 @@ Go to the `.gitconfig` in your home directory and update the name and email in t
 ## Get the Fira code font
 Download it [here](https://github.com/tonsky/FiraCode)
 
+![Terminal fonts](terminal-font.png?raw=true "Terminal font")
+
 ## Add Global .git_ignore
 
 ```
