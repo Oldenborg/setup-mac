@@ -14,14 +14,27 @@ sh ./setup.sh
 1. Terminal > Preferences > Gear Icon > Import
 2. Select one of the theme in this repo called "materialshell-oceanic.terminal
 3. Set as default the profile with the materialshell theme selecting the profile and clicking on the Default button.
+4. While you are at it click `advanced` and untic `Alarm - sound` and `Alarm - visual`
+5. Next type `setup` in the terminal. Change the default `ZSH_THEME` to `materialshell`
 
-## Setting up keyboard shortcuts
+## Set up active corners
+
+Go to `system settings` -> `Mission Control`
+
+Top left: none
+Top right: none
+Bottom left: Mission Control
+Bottom right: Desktop
+
+## Setting up keyboard and shortcuts
+
+Go to `system settings` -> `Keyboard`
+
+Set key preater and repetition interval to max setting
 
 Go to `system settings` -> `Keyboard` -> `Shortcuts` -> `Programshortcuts`
 
 Enter in your perfered shortcuts:
-
-Notes: Gennemstreget/CMD+T
 
 ![Program shortcuts](shortcuts.png?raw=true "Shortcuts")
 
