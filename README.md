@@ -47,3 +47,11 @@ Go to the `.gitconfig` in your home directory and update the name and email in t
 
 ## Get the Fira code font
 Download it [here](https://github.com/tonsky/FiraCode)
+
+## Add Global .git_ignore
+
+```
+cd
+echo .DS_Store >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+```
