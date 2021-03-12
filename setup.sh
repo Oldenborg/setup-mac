@@ -18,22 +18,22 @@ brew install tig
 brew install diff-so-fancy
 brew install watchman
 
-brew cask install google-chrome
-brew cask install zeplin
-brew cask install slack
-brew cask install skype
-brew cask install colorsnapper
-brew cask install mindnode-pro
-brew cask install postman
-brew cask install discord
-brew cask install adobe-creative-cloud
-brew cask install wacom-intuos-tablet
-brew cask install chromium
-brew cask install java
-brew cask install runjs
-brew cask install adoptopenjdk/openjdk/adoptopenjdk8
-brew cask install android-studio
-brew cask install visual-studio-code
+brew install --cask google-chrome
+brew install --cask zeplin
+brew install --cask slack
+brew install --cask skype
+brew install --cask colorsnapper
+# brew install --cask mindnode-pro
+brew install --cask postman
+brew install --cask discord
+brew install --cask adobe-creative-cloud
+# brew install --cask wacom-intuos-tablet
+brew install --cask chromium
+# brew install --cask java
+brew install --cask runjs
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
+brew install --cask android-studio
+brew install --cask visual-studio-code
 
 
 # Get VIM and ZSH settings from GIST
