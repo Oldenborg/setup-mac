@@ -49,6 +49,9 @@ cp ./.gitconfig ~/.gitconfig
 # Move the oh-my-zsh material theme into the custom folder
 cp materialshell.zsh-theme ~/.oh-my-zsh/custom
 
+# move updatescript to home folder
+cp ./updatescript.sh ~/updatescript.sh
+
 # move custom-vimrc to .vimrc
 cp ./custom-vimrc ~/.vimrc
 
